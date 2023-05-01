@@ -12,7 +12,7 @@ app.get("/foo", (_req, res) => {
 		"bar",
 		{ httpOnly: true, sameSite: "none" },
 		{
-			expires: new Date(Date.now() + 25892000000), // set expiry of 1month
+			expires: new Date(Date.now() + 25892000000),
 		}
 	);
 	res.send("sent cookie \n");
