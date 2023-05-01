@@ -11,6 +11,7 @@ app.get("/foo", (_req, res) => {
 			expires: new Date(Date.now() + 25892000000), // set expiry of 1month
 		}
 	);
+	res.send("sent cookie \n");
 });
 
 const server = http.createServer(app);
