@@ -1,7 +1,11 @@
 const http = require("http");
+const cors = require("cors");
 const express = require("express");
 const app = express();
 require("dotenv").config();
+
+app.use(cors());
+
 app.get("/foo", (_req, res) => {
 	res.cookie(
 		"foo",
